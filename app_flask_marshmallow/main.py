@@ -17,7 +17,7 @@ class SkillSchema(Schema):
     category = fields.Str(required=True)
     qual_level = fields.Str(required=True)
     qual_level_id = fields.Integer(required=True)
-    qual_level_ranking = fields.Float(default=0)
+    qual_level_ranking = fields.Float(dump_default=0)
 
 
 class Model(Schema):
